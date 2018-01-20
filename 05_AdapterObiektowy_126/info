@@ -1,0 +1,3 @@
+- zupełnie uprościłem program z książki (tam jest przykład zamiany strony
+desktopowej na mobilną, zmieniając body i plik css). Ja zrobiłem funkcję a(),
+funckję b(), funckję c(), które nic nie robią poza echo.

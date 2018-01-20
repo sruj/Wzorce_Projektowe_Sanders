@@ -1,0 +1,30 @@
+-Nowe fabryki,  Creator i  CountryCreator , są podobne do poprzednich, ale zawierają para-
+metr i podpowiadanie typu. Podpowiadanie typu pozwala na programowanie przy wyko-
+rzystaniu interfejsu ( Product ), a nie jego konkretnych implementacji.
+
+-To, co nie uległo zmianie — i jest bardzo ważne, aby
+nie uległo — to interfejs  getProperties() . Dopóki interfejs pozostanie niezmieniony, wpro-
+wadzanie zmian we wzorcu nie spowoduje błędów w programie. Nawet dodanie nowych,
+zewnętrznych zasobów nie jest problemem. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

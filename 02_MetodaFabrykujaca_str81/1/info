@@ -1,0 +1,54 @@
+<<< OGÓLNIE O WZORCU >>>
+
+-where you have a set of component classes but won’t know exactly which one 
+you’ll need to instantiate until runtime.
+
+-can be used to create different objects, without knowing beforehand what sort 
+of objects it needs to create or how the object is created.
+
+-The Factory Method pattern is used to define a runtime interface for creating 
+an object. 
+
+-It’s called a factory because it creates various types of objects without 
+necessarily knowing what kind of object it creates or how to create it.
+
+
+-tak jak w fabryka posiada gro komponentów, części, drobnych elementów 
+a przed produkcją nowych produktów jeszcze nie wie, które komponenty użyje. 
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+
+
+
+
+
+
+
+-Nie chcemy, aby klasa  Client wysyłała
+żądania bezpośrednio do produktów. Chcemy natomiast, aby żądania były przesyłane przez
+interfejs  Creator
+
+-Później, jeżeli będziemy dodawać produkty lub fabryki, klient będzie mógł
+wykonać takie samo żądanie i uzyskać o wiele szerszą gamę produktów bez konieczności
+wprowadzania zmian w programie
+
+-Konsekwencje stosowania[wikipedia]
+Aplikacja wykorzystująca metody wytwórcze jest niezależna od konkretnych implementacji zasobów oraz procesu ich tworzenia. Mogą być one ustalane dynamicznie w trakcie uruchomienia lub zmieniane podczas działania aplikacji.
+Wzorzec hermetyzuje proces tworzenia obiektów, zamykając go za ściśle zdefiniowanym interfejsem. Właściwość ta jest wykorzystywana, gdy tworzenie nowego obiektu jest złożoną operacją (np. wymaga wstrzyknięcia dodatkowych zależności).
+W wielu obiektowych językach programowania konstruktory klas muszą posiadać ściśle określone nazwy, co może być źródłem niejednoznaczności podczas korzystania z nich. Wzorzec umożliwia zastosowanie nazwy opisowej oraz wprowadzenie kilku metod fabryki tworzących obiekt na różne sposoby.
+

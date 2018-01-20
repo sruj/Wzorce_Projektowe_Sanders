@@ -1,0 +1,16 @@
+Te pliki nie są bezpośrednio związane z Proxy a tworzą materiał do działania z Proxy
+
+- IConnectInfo i UniversalConnetct- to interfejs i klasa połczeniowa do bazy danych
+
+- HashRegister, Register.html i ConnectClient - to pliki używane przy rejestracji użytkownika
+
+
+
+Te pliki to wzorzec projektowy Proxy (-logowanie)
+-Client
+-ISubject
+-RealSubject
+-Proxy
+-start.html
+
+(wpisz np log:andrzej p:duda)
