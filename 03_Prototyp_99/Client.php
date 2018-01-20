@@ -4,8 +4,9 @@ include_once './Informatyka.php';
 include_once './Marketing.php';
 
 
-class Client{
-    
+class Client
+{
+
     private $i;
     private $m;
 
@@ -14,16 +15,17 @@ class Client{
 
     private $m1;
     private $m2;
-    
-    public function __construct() {
+
+    public function __construct()
+    {
         $this->i = new Informatyka();
         $this->m = new Marketing();
-        
+
         $this->i1 = clone $this->i;
         $this->setEmploye($this->i1, '1', "Robs");
         $this->i2 = clone $this->i;
         $this->setEmploye($this->i2, '2', "Lobs");
-    
+
         $this->m1 = clone $this->m;
         $this->setEmploye($this->m1, '3', "Mobs");
         $this->m2 = clone $this->i;
@@ -35,18 +37,20 @@ class Client{
         $this->speaker($this->m2);
     }
 
-    public function speaker(Prototype $param) {
-        echo $param->getId()."<br>";
-        echo $param->getNazwisko()."<br>";
-        echo $param::dzial."<br><br>";
+    public function speaker(Prototype $param)
+    {
+        echo $param->getId() . "<br>";
+        echo $param->getNazwisko() . "<br>";
+        echo $param::dzial . "<br><br>";
     }
-    
-    public function setEmploye(Prototype $obj,$id,$nazw) {
+
+    public function setEmploye(Prototype $obj, $id, $nazw)
+    {
         $obj->setId($id);
         $obj->setNazwisko($nazw);
     }
-    
+
 }
 
 
-$run= new Client();
+$run = new Client();
