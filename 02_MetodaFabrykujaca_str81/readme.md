@@ -1,4 +1,6 @@
 
+# Fabryka - Metoda Fabrykująca
+https://paper.dropbox.com/doc/wzorce-fabryka-Fabryka-Metoda-Fabrykujaca-DOBRE-RADY-2016-ithG1H6cjE8VWiKyUZkj4
 ## OGÓLNIE
 - ma za zadaniie stworzyć produkt niezwiązany z klasą która go stworzyła.
 - ten wzorzec to ukłon dla zasady 'uzalezniaj się od abstrakcji a nie klas rzeczywistych'.
@@ -11,6 +13,6 @@
 - aby zachowane było luźne łączenie, klient przesyła żądanie przez fabrykę, następnie fabryka tworzy żądany produkt..
 - Klient przechowuje referencję do fabryki, dzięki której może zarządać produktu. Nie tworzy instancji żądanego produktu. Instancje tworzone są w fabrykach konkretnych..
 - ważne jest to że Klient pozostawia kwestie związaną z charakterystyką produktu poszczególnym implementacjom..
-##ZASTOSOWANIE
+## ZASTOSOWANIE
 - Gdy podklasa tworzonego obiektu może się zmieniać ( nawet podklasy interfejsu).
 - Kiedy klasa nie może przewidzieć liczby obiektów które będzie musiała stworzyć , a więc gdy nie chcemy aby była z tymi obiektami silnie związana..
